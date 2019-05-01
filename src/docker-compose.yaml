@@ -1,0 +1,18 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+    ports: 
+    - "5000:5000"
+    volumes: 
+    - ../output:/usr/output
+  watcher:
+    build: 
+      context: .
+      dockerfile: ./watcher/Dockerfile
+    volumes: 
+    - ../output:/usr/output
+    - ../input:/usr/input
+
