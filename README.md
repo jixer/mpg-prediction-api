@@ -13,12 +13,12 @@ The second container hosts a uses the model created by the file watcher to run p
 
 
 # Running the POC
-To run the POC, first clone the github repo to a local director.  Once that is complete, navigate to the root `mpg-prediction-api`:
+To run the POC, first clone the github repo to a local directory.  Once that is complete, navigate to the root `mpg-prediction-api`:
 ```sh
 cd ./mpg-prediction-api
 ```
 
-Create two directories there named "output" and "input" which will are used as volume mount points within the docker-compose.yaml file.
+Create two directories there named "output" and "input" which will are used as volume mount points within the `docker-compose.yaml` file.
 ```sh
 mkdir output && mkdir input
 ```
